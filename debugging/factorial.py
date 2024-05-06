@@ -8,9 +8,5 @@ def factorial(n):
         n = n - 1
     return result
 
-if len(sys.argv) != 2:
-    print("Usage: {} <number>".format(sys.argv[0]))
-    sys.exit(1)
-
-f = factorial(int(sys.argv[1]))
+f = factorial(max(1, int(sys.argv[1])))
 print(f)
